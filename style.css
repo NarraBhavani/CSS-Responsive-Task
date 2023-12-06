@@ -1,0 +1,304 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding:20px;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul{
+    display:inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display:inline-block;
+    margin-right:20px;
+}
+a{
+    text-decoration: none;
+    color:aliceblue;
+}
+h1,h2{
+    color:white;
+}
+p{
+    color:white;
+}
+.header{
+    background-color:darkblue;
+}
+.container{
+    max-width:1300px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;		
+}
+.row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-1{
+    flex-basis:50%;
+    min-width: 300px;
+}
+.col-1 img{
+    max-width: 100%;
+    padding:50px 0;
+}
+.col-1 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin:25px 0;  
+}
+.btn{
+    display:inline-block;
+    background-color: blue;
+    color:white;
+    border-radius: 10px;
+    padding:8px 30px;
+    margin:30px 0;
+}
+#features{
+    display:inline-block;
+    background-color:rgb(52, 57, 65);
+    width:100%;
+    margin:auto;
+    align-items: center;
+    padding-left:25px;
+    padding-right: 25px;
+    align-content: center;
+}
+h3{
+    color:white;
+    padding-bottom: 15px;
+    
+    
+}
+.bold{
+    color:white;
+    font-size: 30px;
+    line-height: 60px;
+    margin:25px 0;
+    
+
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    float:right; 
+      
+}
+.title{
+
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap:15px;
+    padding:40px;
+}
+#text-center{
+    background-color:darkslateblue;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    padding-top:100px;
+    padding-bottom:100px;
+    width:100%;
+}
+.modern{
+    font-style:italic;
+    font-size: 25px;
+    color:white;
+    font-weight: lighter;
+    padding-bottom: 50px;
+}
+#thick{
+    color:white;
+    font-weight:bold;
+    padding-bottom:500px;
+    
+    
+}
+#blue{
+    color:blue;
+}
+.circle{
+    border-radius:50px;
+    vertical-align: middle;
+    padding:20px;
+    margin-right: 1rem !important;
+}
+.testimonial{
+    padding-top: 100px;
+    background-color:white;
+}
+.bloghead{
+    color:black;
+    font-size: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.test{
+    color:gray;
+    font-size: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.blog{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    flex-basis:content;
+    flex-direction: row;
+    cursor: pointer;
+
+}
+.blog>.col-3{
+    padding:40px 20px;
+    text-align: center;
+    background-color:darkslategrey;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin:10px;
+}
+.col-3>img{
+    width:100%;
+}
+
+@media (max-width:800px){
+    .blog{
+        flex-direction: column;
+    }
+}
+.bottom>.round{
+    border-radius: 50%;
+    vertical-align: middle;
+    width:50px;
+    margin-right: 1rem !important;    
+}
+.bottom{
+    padding:30px;
+}
+.para{
+   font-size:15px;
+   padding-left:65px;
+   padding-bottom: 20px; 
+}
+.sign-page{
+    background-color:navy;
+    text-align: center;
+    padding:30px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    border-radius: 30px;
+}
+#head{
+    color:white;
+    padding:10px;
+}
+.statement{
+    color:azure;
+    padding:10px;
+}
+#email{
+    padding:10px;
+    background-color: white;
+    color:gray;
+    border-radius: 10px;
+}
+#signup{
+    padding:10px;
+    border-radius: 10px;
+    background-color: blue;
+    color:white;
+    border-color: white;
+}
+.outborder{
+    background-color: #fff;
+}
+/*------mediaquery for menu------*/
+@media only screen and (max-width: 800px){
+
+	nav ul{
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		transition: max-height 0.5s;
+
+	}
+	nav ul li{
+		display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	nav ul li a{
+		color: #fff;
+	}
+	.menu-icon{
+		display:block;
+		cursor: pointer;
+
+	}
+}
+
+
+@media only screen and (max-width: 600px){
+	.row{
+		text-align: center;
+	}
+	.col-1,.co-2,.col-3{
+		flex-basis: 100%;
+	}
+}
+.footer{
+    
+    background: #000;
+	font-size: 15px;
+    padding:35px;
+    color:#fff;
+    width:100%;
+    
+    
+
+}
+.contain{
+    background-color: #fff;
+    padding-top:20px;
+}
+.Link>a{
+    float:right;
+    color:#fff;
+    font-size: 15px;
+    text-align: justify;
+
+}
+
+
+
+
+
+
+
+
+    
+    
+
+    
+
+    
+
+
